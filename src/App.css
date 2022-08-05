@@ -222,7 +222,7 @@ li {
 }
 
 .video-player {
-    pointer-events: none;
+    /*pointer-events: none;*/
     z-index: 0;
 }
 
