@@ -86,7 +86,9 @@ function App(props) {
     const randomNumber = props.randomNumber
 
     useEffect(() => {
-        document.getElementById("video").click()
+        setTimeout(()=> {
+            document.getElementById("video").click()
+        },1000)
     }, []);
 
 
