@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import logo from '../../Logo/netflix-logo-png-2564.png'
 import {useState} from "react";
+import SearchBar from "../SearchBar/search-bar";
 
 export default function Navbar() {
 
@@ -28,11 +29,8 @@ export default function Navbar() {
                             <li className="nav-item">
                                 <Link className="nav-link text-light" aria-current="page" to="">Home</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link text-light" aria-current="page" to="/home">My List</Link>
-                            </li>
-
                         </ul>
+                        <SearchBar/>
                     </div>
                 </div>
             </nav>

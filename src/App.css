@@ -151,7 +151,7 @@ li {
 .left-arrow, .right-arrow {
     position: absolute;
     padding: 2.7rem 0.9rem;
-    height: 3.1rem;
+    height: 3.2rem;
     cursor: pointer;
     transition: 0.2s ease;
 }
@@ -179,6 +179,10 @@ li {
 }
 #box-3 {
     transition: 1s ease;
+}
+#box-4 {
+    transition: 1s ease;
+    margin-bottom: 20rem !important;
 }
 
 .video-wrapper {
@@ -222,10 +226,86 @@ li {
     pointer-events: none;
     z-index: 0;
 }
+
 .btn:focus, .btn:active:focus, .btn.active:focus{
     outline:none;
     box-shadow:none;
 }
+
+.search_icon, .search_icon_bar {
+    width: 2rem;
+    height: 1.3rem;
+    transform: rotate(-13deg);
+    cursor: pointer;
+}
+.search_bar {
+    border: none;
+    width: 2rem;
+    background-color: transparent;
+    opacity: 0.8;
+    position: relative;
+    font-size: 0.8rem;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    z-index: 2;
+}
+.search_bar:focus{
+    width: 18rem;
+    background-color: black;
+    border: 1px solid white;
+}
+
+input[type="search"]::-webkit-search-cancel-button{
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+}
+.search_bar:focus{
+    outline: none;
+}
+.search_bar::placeholder {
+    font-size: 0.8rem;
+}
+.search_icon_bar {
+    cursor: pointer;
+    position: absolute;
+    z-index: -1;
+}
+.search-content-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #141414;
+    z-index: 10;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 10rem;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.search-content-wrapper > * {
+    width: 17rem;
+    pointer-events: none;
+    margin-bottom: 2rem;
+}
+.no-results {
+    flex-direction: column;
+    width: 60vh;
+    color: white;
+    font-size: 0.7rem;
+}
+.no-results ul li {
+    font-size: 0.7rem;
+}
+
+
 @media screen and (min-width: 1900px) {
     #homeVideo button {
         position: absolute;
@@ -255,6 +335,9 @@ li {
     .row-3 {
         margin-top: 27rem !important;
     }
+    .row-4 {
+        margin-top: 43.5rem !important;
+    }
     .left-arrow, .right-arrow {
         height: 5rem;
         padding: 2.7rem 0.5rem;
@@ -276,9 +359,9 @@ li {
         font-size: 15rem;
     }
     .title-description-wrapper h5 {
-        width: 35rem;
+        width: 33rem;
         height: 9rem;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
     ::-webkit-scrollbar {
         width: 0;  /* Remove scrollbar space */
@@ -288,4 +371,11 @@ li {
     .logo-wrapper img {
         width: 2rem;
     }
+    .search-content-wrapper > * {
+        width: 20rem;
+    }
+    .no-results {
+        width: 35vh;
+    }
 }
+

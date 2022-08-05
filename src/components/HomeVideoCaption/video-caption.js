@@ -15,7 +15,7 @@ export default function VideoCaption(props) {
                 <div><p className="pb-0 pt-3">SERIES</p></div>
                </div>
               <div className="title-description-wrapper">
-                  <h2 id={"homeTitle"} className="mt-2 mb-3">{props.title}</h2>
+                  <h2 id={"homeTitle"} className="mt-2 mb-5">{props.title}</h2>
                    <h5 className="mt-5">{props.description}</h5>
               </div>
           </div>

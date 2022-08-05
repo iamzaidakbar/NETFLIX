@@ -6,8 +6,16 @@ import apiContext from "../../../context/apiContext";
 
 export default function Top10() {
 
+    const defaultPicture = "https://occ-0-3213-58.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVnUoqO98RZgU7QYapJnbAGPYxdWzxFORcnnyXL7_irTpxkSTU3S3k8BUqORLhVtJfNUxAJO3uyz_za9ReIn7Ah6Lhywb9ueq8ApJ_d6NRFR07GibgivxoGz7a27rs3KH-nS.jpg?r=ad9"
+
     const context = useContext(apiContext)
-    const {topRatedMovie, fetch_Top_Rated, backdropPath, animationMarginOnLargerScreen,animationMarginOnNormalScreen} = context
+    const {
+        topRatedMovie,
+        fetch_Top_Rated,
+        backdropPath,
+        animationMarginOnLargerScreen,
+        animationMarginOnNormalScreen
+    } = context
 
     useEffect(() => {
         fetch_Top_Rated()
@@ -54,8 +62,8 @@ export default function Top10() {
                 setRowThreeArrows(true)
             }} className="d-flex gap-1 mt-4 mb-5">
                 {topRatedMovie.map(item => {
-                    return <VideoCollection key={item.id}
-                                            img_src={backdropPath + item.backdrop_path}/>
+                    return <VideoCollection item={item} key={item.id}
+                                            img_src={item?.backdrop_path === null ? defaultPicture : backdropPath + item?.backdrop_path}/>
                 })}
 
                 <div className="arrow-buttons d-flex">
