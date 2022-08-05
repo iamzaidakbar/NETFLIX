@@ -24,7 +24,7 @@ function App(props) {
     }, {
         id: 3,
         name: "Black Adam",
-        src: base_path + "R1n7GzVsQFU",
+        src: base_path + "JqtRDHiNW54?t=5",
         description: "As originally depicted, Black Adam was a corrupted, ancient Egyptian predecessor of Captain Marvel, who fought his way to modern times to challenge the hero and his Marvel Family associates.",
     }, {
         id: 4,
@@ -69,7 +69,7 @@ function App(props) {
     }, {
         id: 12,
         name: "SHAZAM!",
-        src: base_path + "Zi88i4CpHe4",
+        src: base_path + "EHRmypwgsxU",
         description: "Shazam. explores Billy Batson's life; an abandoned 14-year-old looking for his parents; isolating himself from anyone willing to give him anything until he is given a final chance to settle in with a new foster family (themselves orphans) hoping they can help him see sense."
     },]
 

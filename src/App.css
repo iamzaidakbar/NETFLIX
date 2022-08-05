@@ -222,7 +222,6 @@ li {
 }
 
 .video-player {
-    /*height: 8rem;*/
     pointer-events: none;
     z-index: 0;
 }
